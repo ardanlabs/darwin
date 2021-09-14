@@ -54,7 +54,7 @@ type Migration struct {
 
 // Checksum calculate the Script md5.
 func (m Migration) Checksum() string {
-	return fmt.Sprintf("%x", md5.Sum([]byte(m.Script)))
+	return fmt.Sprintf("%x", md5.Sum([]byte(strings.ToLower(m.Script))))
 }
 
 // MigrationInfo is a struct used in the infoChan to inform clients about
