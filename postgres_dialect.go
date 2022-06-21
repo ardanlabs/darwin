@@ -8,7 +8,7 @@ func (p PostgresDialect) CreateTableSQL() string {
 	return `CREATE TABLE IF NOT EXISTS darwin_migrations
                 (
                     id             SERIAL                  NOT NULL,
-                    version        REAL                    NOT NULL,
+                    version        DOUBLE PRECISION        NOT NULL,
                     description    CHARACTER VARYING (255) NOT NULL,
                     checksum       CHARACTER VARYING (32)  NOT NULL,
                     applied_at     INTEGER                 NOT NULL,
