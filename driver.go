@@ -44,7 +44,7 @@ func NewGenericDriver(db *sql.DB, dialect Dialect) (*GenericDriver, error) {
 	}
 
 	if dialect == nil {
-		return nil, errors.New("darwin: sql.DB is nil")
+		return nil, errors.New("darwin: Dialect is nil")
 	}
 
 	return &GenericDriver{DB: db, Dialect: dialect}, nil
