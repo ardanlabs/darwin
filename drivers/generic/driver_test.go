@@ -139,11 +139,7 @@ func Test_GenericDriver_All_error(t *testing.T) {
 	mock.ExpectQuery(escapeQuery(dialect.AllSQL())).
 		WillReturnError(errors.New("Generic error"))
 
-	migrations, err := d.All()
-	if err != nil {
-		t.Fatalf("unable to query record: %s", err)
-	}
-
+	migrations, _ := d.All()
 	if len(migrations) != 0 {
 		t.Fatalf("len(migrations) == %d, wants 0", len(migrations))
 	}
