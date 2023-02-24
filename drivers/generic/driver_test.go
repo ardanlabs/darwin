@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/DATA-DOG/go-sqlmock"
-	"github.com/ardanlabs/darwin/v2"
-	"github.com/ardanlabs/darwin/v2/dialects/mysql"
-	"github.com/ardanlabs/darwin/v2/drivers/generic"
+	"github.com/ardanlabs/darwin/v3"
+	"github.com/ardanlabs/darwin/v3/dialects/mysql"
+	"github.com/ardanlabs/darwin/v3/drivers/generic"
 )
 
 func Test_GenericDriver_Create(t *testing.T) {

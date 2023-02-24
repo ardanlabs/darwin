@@ -1,4 +1,4 @@
-module github.com/ardanlabs/darwin/v2
+module github.com/ardanlabs/darwin/v3
 
 go 1.16
 

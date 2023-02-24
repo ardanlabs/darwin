@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ardanlabs/darwin/v2"
+	"github.com/ardanlabs/darwin/v3"
 )
 
 // Dialect is used to support multiple databases by returning proper SQL.
